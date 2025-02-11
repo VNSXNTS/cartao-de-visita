@@ -25,7 +25,7 @@ body {
     padding: 10px;
 }
 
-/* === INTERRUPTOR MODO ESCURO === */
+/* INTERRUPTOR MODO ESCURO */
 .dark-mode-toggle {
     position: fixed;
     top: 20px;
@@ -89,7 +89,7 @@ body {
     right: auto;
 }
 
-/* === MODO ESCURO === */
+/* MODO ESCURO */
 .dark-mode {
     background-color: #121212;
     color: white;
@@ -126,7 +126,7 @@ body {
     color: yellow;
 }
 
-/* === CAIXA PRINCIPAL === */
+/* CAIXA PRINCIPAL */
 .box {
     display: flex;
     flex-direction: column;
@@ -173,7 +173,7 @@ body {
     margin-top: 10px;
 }
 
-/* === BOTÕES DE CONTATO === */
+/* BOTÕES DE CONTATO */
 .contato {
     display: flex;
     flex-direction: column;
@@ -201,12 +201,12 @@ body {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* === RESPONSIVIDADE === */
+/* RESPONSIVIDADE */
 @media (min-width:375px)and (max-width:767px){
     .box {
         max-width: 400px;
         margin: 0 auto;
-        margin-left: -10px;
+
     }
     .text h1 {
         font-size: 20px;
@@ -215,11 +215,12 @@ body {
         font-size: 14px;
     }
 }
+
 @media (min-width: 768px) {
     .box {
         max-width: 500px;
         margin-left:90px;
-        margin-left: 20px;
+        margin-left: 0 auto;
     }
     .text h1 {
         font-size: 30px;

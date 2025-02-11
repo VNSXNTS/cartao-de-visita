@@ -204,8 +204,9 @@ body {
 /* === RESPONSIVIDADE === */
 @media (min-width:375px)and (max-width:767px){
     .box {
-        max-width: 300px;
+        max-width: 400px;
         margin: 0 auto;
+        margin-left: -10px;
     }
     .text h1 {
         font-size: 20px;
@@ -218,6 +219,7 @@ body {
     .box {
         max-width: 500px;
         margin-left:90px;
+        margin-left: 20px;
     }
     .text h1 {
         font-size: 30px;

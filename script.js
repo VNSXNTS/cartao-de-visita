@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.querySelector(".linkedin").addEventListener("click", function () {
-        abrirLink("https://www.linkedin.com/in/amanda-rodrigues");
+        abrirLink("https://www.linkedin.com/in/https://www.linkedin.com/in/amanda-da-silva-rodrigues-14a18329a/?otpToken=MTMwNzFmZTIxNTJjYzBjMmI1MmUwZmViNDExZGVlYjU4YWNjZDQ0NDk5YWM4NzZiN2JjZjAyNmU0ZTVjNThmYmY0ZGRkY2U5NzdlZGVhODU0ZmIwZWU5OTZjYWIxYzg5ZjhlNjE5ODc2OWZmOGJhOTZlYThjNDgxLDEsMQ%3D%3D&midSig=3vCzw6H38iiHE1&eid=k2105m-m6yegocf-uk&midToken=AQFNpTKOTptGNQ&trkEmail=eml-email_pymk_02-header-0-profile_glimmer-null-k2105m~m6yegocf~uk-null-null&trk=eml-email_pymk_02-header-0-profile_glimmer&originalSubdomain=br");
     });
 
     document.querySelector(".email").addEventListener("click", function () {
-        window.location.href = "mailto:seuemail@gmail.com";
+        window.location.href = "mailto:https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtMhFljxGKZvBszQhtCLdVNMJjwFvMHrpdLKzjMqmMKMBszZvJGtdJlKVkJHzcrBxkFqZsSg";
     });
 
     // === Alternar entre modo claro e escuro ===

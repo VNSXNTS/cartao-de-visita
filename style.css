@@ -1,0 +1,234 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #B9D7B7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+/* === INTERRUPTOR MODO ESCURO === */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Esconde checkbox padrão */
+#dark-mode-switch {
+    display: none;
+}
+
+/* Estiliza o botão deslizante */
+.toggle-label {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Bolinha do switch */
+.toggle-label::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    transition: transform 0.3s ease;
+}
+
+/* Ícone dentro do switch */
+.toggle-icon {
+    position: absolute;
+    right: 5px;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+}
+
+/* Quando ativado (modo escuro) */
+#dark-mode-switch:checked + .toggle-label {
+    background-color: #111;
+}
+
+/* Move a bolinha para o lado direito */
+#dark-mode-switch:checked + .toggle-label::after {
+    transform: translateX(25px);
+}
+
+/* Muda o ícone para o sol ☀ */
+#dark-mode-switch:checked + .toggle-label .toggle-icon {
+    content: "☀";
+    left: 5px;
+    right: auto;
+}
+
+/* === MODO ESCURO === */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Fundo da caixa no modo escuro */
+.dark-mode .box {
+    background: linear-gradient(135deg, #1c1c1c, #333);
+    border: 1px solid #fff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Muda a cor dos textos */
+.dark-mode .text,
+.dark-mode .text h1,
+.dark-mode .text p {
+    color: white;
+}
+
+/* Botões no modo escuro */
+.dark-mode .contato button {
+    background: linear-gradient(135deg, #333, #555);
+    color: white;
+    border: 1px solid #fff;
+}
+
+/* Efeito ao passar o mouse */
+.dark-mode .contato button:hover {
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* Ícones do switch no modo escuro */
+.dark-mode .toggle-icon {
+    color: yellow;
+}
+
+/* === CAIXA PRINCIPAL === */
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    margin-left: 28%;
+    background: linear-gradient(135deg, #B9D7B7, #596858);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+/* Imagem do perfil */
+.box img {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+/* Estiliza textos */
+.text {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.text h1 {
+    font-size: 26px;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.text p {
+    font-size: 15px;
+    color: #000000;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+/* === BOTÕES DE CONTATO === */
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+/* Botão padrão */
+.contato button {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: linear-gradient(135deg, #B9D7B7, #596858);
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.contato button:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* === RESPONSIVIDADE === */
+@media (min-width:375px)and (max-width:767px){
+    .box {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .text h1 {
+        font-size: 20px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+}
+@media (min-width: 768px) {
+    .box {
+        max-width: 500px;
+        margin-left:90px;
+    }
+    .text h1 {
+        font-size: 30px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .box {
+        max-width: 600px;
+    }
+}
